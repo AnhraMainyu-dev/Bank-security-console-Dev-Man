@@ -15,7 +15,6 @@ pip install -r requirements.txt
 ```
 git clone https://github.com/AnhraMainyu-dev/Bank-security-console-DevMan
 ```
-Необходимые данные для запуска программы должны быть указаны в файле ****settings.py****.  
 
 В файле окружения ****.env**** следует указать url с настройками подключения к базе данных в формате:  
 ```python
