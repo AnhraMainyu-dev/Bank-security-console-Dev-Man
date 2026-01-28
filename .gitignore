@@ -56,3 +56,7 @@ media/
 htmlcov/
 .pytest_cache/
 .tox/
+
+# Poetry 
+poetry.lock
+pyproject.toml
