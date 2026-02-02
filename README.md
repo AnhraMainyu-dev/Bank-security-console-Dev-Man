@@ -48,19 +48,9 @@ SECRET_KEY='REPLACE_ME'
 
 ### Использование
 
-Пример использования программы в ситуации, где нужно проверить количество активных пропусков. Запустите ****main.py****:
+Пример использования программы в ситуации, где нужно проверить количество активных пропусков.  
+Запустите ****main.py**** командной `python main.py`
 ```python
-import os
-import django
-from dotenv import load_dotenv
-
-load_dotenv()
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
-django.setup()
-
-from datacenter.models import Passcard
-
 if __name__ == '__main__':
     active_passcard = Passcard.objects.filter(is_active=True)
     print('Количество пропусков:', Passcard.objects.count())
